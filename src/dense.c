@@ -8,6 +8,7 @@ typedef struct{
     float* biases;
     float* dweights;
     float* dbiases;
+    float* out;
 
 } DenseLayer;
 
@@ -25,6 +26,7 @@ DenseLayer* init_layer(int in_dim, int out_dim){
     layer->biases = (float*)malloc(out_dim * sizeof(float));
     layer->dweights = (float*)malloc(in_dim * out_dim * sizeof(float));
     layer->dbiases = (float*)malloc(out_dim * sizeof(float));
+    layer->out = (float*)malloc(out_dim * sizeof(float));
 
     if(layer->weights || layer->biases || layer->dweights || layer->dbiases){
         perror("Paremeters: allocation failed.");

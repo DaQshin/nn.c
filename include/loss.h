@@ -3,8 +3,8 @@
 
 #include "dense.h"
 
-float mean_squared_loss(DenseLayer* l);
-float d_mean_squared_loss(DenseLayer* l);
+float MSE(DenseLayer* l, float* target);
+float* dMSE(DenseLayer* l, float* target);
 
 
 #endif
