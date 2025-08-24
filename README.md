@@ -16,7 +16,7 @@ To build the library, you will need `gcc` and `make` installed.
 Clone the repository and compile the source code:
 
 ```bash
-git clone https://github.com/your-username/nn.c.git
+git clone https://github.com/DaQshin/nn.c.git
 cd nn.c
 make
 ```
